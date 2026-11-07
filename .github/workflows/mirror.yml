@@ -14,5 +14,5 @@ jobs:
           fetch-depth: 0
       - name: Push su Codeberg
         run: |
-          git remote add codeberg https://samuisa:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/samuisa/NOME_REPO_CODEBERG.git
-          git push codeberg --all --force
+          git remote add codeberg https://samuisa:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/samuisa/cooperative.git
+          git push codeberg HEAD:refs/heads/${{ github.ref_name }} --force
