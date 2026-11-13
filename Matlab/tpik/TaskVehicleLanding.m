@@ -1,4 +1,4 @@
-classdef TaskVehicleAltitude < Task
+classdef TaskVehicleLanding < Task
     properties
         feedGain = 0.5;
         altMin = -38.0;
